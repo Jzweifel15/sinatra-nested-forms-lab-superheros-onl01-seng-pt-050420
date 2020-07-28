@@ -18,7 +18,7 @@ class App < Sinatra::Base
       @hero_powers = []
       @hero_bios = []
 
-      params[:team][:members].each do |hero|
+      @super_heroes.each do |hero|
         @hero_names.push(hero[:name])
         @hero_powers.push(hero[:power])
         @hero_bios.push(hero[:bio])
